@@ -1,0 +1,12 @@
+<%-- any content can be specified here e.g.:
+Deve haver um fragmento de página chamada "menu.jspf" em pasta apropriada 
+que mostre um menu com as opções "Início", "Sobre", "Minhas Disciplinas" e que 
+seja incluída em todas as páginas da aplicação
+(20 pontos)
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>
+    <a href="index.jsp">Incio</a>
+    <a href="disciplina.jsp">Disciplinas</a>
+    <a href="sobre.jsp">Sobre</a>
+</h2>

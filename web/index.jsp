@@ -13,21 +13,24 @@ número de matrícula (RA) e a quantidade de disciplinas matriculadas neste seme
 (utilizando o getList() da classe Disciplina).
 (10 pontos)
 
-Deve haver um fragmento de página chamada "menu.jspf" em pasta apropriada 
-que mostre um menu com as opções "Início", "Sobre", "Minhas Disciplinas" e que 
-seja incluída em todas as páginas da aplicação
-(20 pontos)
 
 --%>
-
+<%@page import="br.edu.fatecpg.poo.p1.Disciplina"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% 
+    Disciplina pessoa = new Disciplina("Ewerton Luiz", 12345678, 6, "Materia", "ementa", 4, 10);
+%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Prova p1 POO</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file="WEB-INF/menu.jspf" %>
+        <h1>Prova de POO</h1>
+        <h2>Nome: <%= pessoa.getNomeAluno() %></h2>
+        <h2>RA: <%= pessoa.getRa() %></h2>
+        <h2>Quantidade de disciplina: <%= pessoa.getQtd() %></h2>
     </body>
 </html>

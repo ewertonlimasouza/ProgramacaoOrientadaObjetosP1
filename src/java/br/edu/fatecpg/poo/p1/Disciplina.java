@@ -76,6 +76,12 @@ public class Disciplina {
     }
 
     public int getCiclo() {
+        if(ciclo<1)
+            this.ciclo = 1;
+        else if(ciclo>6)
+            this.ciclo = 6;
+        else 
+            this.ciclo = ciclo;
         return ciclo;
     }
 
@@ -84,6 +90,12 @@ public class Disciplina {
     }
 
     public double getNota() {
+        if(nota<0)
+            this.nota = 0;
+        else if(nota>10)
+            this.nota = 10;
+        else 
+            this.nota = nota;
         return nota;
     }
 
