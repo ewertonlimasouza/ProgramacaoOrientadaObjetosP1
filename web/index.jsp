@@ -18,7 +18,7 @@ número de matrícula (RA) e a quantidade de disciplinas matriculadas neste seme
 <%@page import="br.edu.fatecpg.poo.p1.Disciplina"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% 
-    Disciplina pessoa = new Disciplina("Ewerton Luiz", 12345678, 6, "Materia", "ementa", 4, 10);
+    Disciplina pessoa = new Disciplina("Ewerton Luiz", 129048182, 7, "Materia", "ementa", 4, 10);
 %>
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,8 @@ número de matrícula (RA) e a quantidade de disciplinas matriculadas neste seme
     </head>
     <body>
         <%@include file="WEB-INF/menu.jspf" %>
-        <h1>Prova de POO</h1>
+        <h1>Prova POO</h1>
+        <h1>Index</h1>
         <h2>Nome: <%= pessoa.getNomeAluno() %></h2>
         <h2>RA: <%= pessoa.getRa() %></h2>
         <h2>Quantidade de disciplina: <%= pessoa.getQtd() %></h2>

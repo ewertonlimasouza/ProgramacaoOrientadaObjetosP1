@@ -45,7 +45,8 @@ a nota da disciplina.
     </head>
     <body>
         <%@include file="WEB-INF/menu.jspf" %>
-        <h1>Prova de POO</h1>
+        <h1>Prova POO</h1>
+        <h1>Disciplinas</h1>
         <hr/>
         <table border="1">
             <hr/>
